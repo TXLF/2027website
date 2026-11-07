@@ -1,7 +1,20 @@
 ######################## default configuration ####################
-baseURL = "https://2026.texaslinuxfest.org/"
-title = "Texas Linux Festival 2026"
+baseURL = "https://2027.texaslinuxfest.org/"
+title = "Texas Linux Festival 2027"
 theme = "eventre-hugo"
+# Pages left over from 2026 that are not published on the 2027 site. Remove a
+# line here to bring that section back. These must be excluded here because
+# "draft: true" has no effect: the build runs with --buildDrafts.
+ignoreFiles = [
+  '/content/speakers/',
+  '/content/talks/',
+  '/content/interviews/',
+  '/content/schedule\.md$',
+  '/content/.*-schedule-day-[12]\.md$',
+  '/content/pricing\.md$',
+  '/content/party\.md$',
+  '/content/sponsors/(rackspace|scinary)\.md$',
+]
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "America/Chicago"
 # post excerpt
@@ -121,11 +134,11 @@ hasChildren = true
   url = "about/"
   weight = 1
 
-  [[menu.main]]
-  parent = "About TXLF"
-  name = "Speakers"
-  url = "https://pretalx.com/txlf2026/speaker/"
-  weight = 2
+  #[[menu.main]]
+  #parent = "About TXLF"
+  #name = "Speakers"
+  #url = "https://pretalx.com/txlf2027/speaker/"
+  #weight = 2
 
   [[menu.main]]
   parent = "About TXLF"
@@ -151,10 +164,10 @@ hasChildren = true
 #url = "speakers/"
 #weight = 3
 
-[[menu.main]]
-name = "Schedule"
-url = "schedule/"
-weight = 4
+#[[menu.main]]
+#name = "Schedule"
+#url = "schedule/"
+#weight = 4
 
 [[menu.main]]
 weight = 5
@@ -166,11 +179,11 @@ hasChildren = true
   #name = "Gallery"
   #url = "gallery/"
 
-  [[menu.main]]
-  parent = "Get Involved"
-  name = "Register"
-  url = "pricing/"
-  weight = 10
+  #[[menu.main]]
+  #parent = "Get Involved"
+  #name = "Register"
+  #url = "pricing/"
+  #weight = 10
 
 
   [[menu.main]]
@@ -179,11 +192,11 @@ hasChildren = true
   url = "sponsorship/"
   weight = 11
 
-  [[menu.main]]
-  parent = "Get Involved"
-  name = "Sponsors"
-  url = "sponsors/"
-  weight = 12
+  #[[menu.main]]
+  #parent = "Get Involved"
+  #name = "Sponsors"
+  #url = "sponsors/"
+  #weight = 12
 
   [[menu.main]]
   parent = "Get Involved"
@@ -225,11 +238,12 @@ hasChildren = true
   url = "https://commons.utexas.edu/about-us/location-information#parking"
   weight = 40
 
-  [[menu.main]]
-  parent = "Venue"
-  name = "Print your Parking Permit"
-  url = "/images/txlf-parking-permit.pdf"
-  weight = 50
+  # add the 2027 permit at static/images/txlf-parking-permit.pdf, then uncomment
+  #[[menu.main]]
+  #parent = "Venue"
+  #name = "Print your Parking Permit"
+  #url = "/images/txlf-parking-permit.pdf"
+  #weight = 50
 
 
 [[menu.main]]
@@ -259,7 +273,7 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button
 [params.navigation_button]
-enable = true
+enable = false # re-enable once 2027 registration opens
 label = "Buy Ticket"
 icon = "images/icon/ticket.png"
 link = "pricing/"

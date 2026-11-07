@@ -2,17 +2,18 @@
 banner:
   enable : true
   heading : "Texas Linux Festival"
-  heading_2 : "Nov 6-7, 2026"
+  heading_2 : "Sep 17-18, 2027"
   content : "Austin, TX"
   timer:
     enable : true
-    year : 2026
-    month : 11
-    day : 6
+    year : 2027
+    month : 9
+    day : 17
   button:
     enable : true
-    label : "Get tickets now"
-    link : "pricing/"
+    # swap back to "Get tickets now" / "pricing/" once 2027 registration opens
+    label : "Become a sponsor"
+    link : "sponsorship/"
     # @ilan - fix this link for a signup page for info
     # label: "sign up for updates!"
     # link: "https://register.linuxfests.org/reg6/"
@@ -33,8 +34,9 @@ about:
     Texas Linux Festival is a non-profit (501c) community based organization that is run by volunteers to organize and provide the TXLF conferences. The first official TXLF conference was held in 2010 in Austin, TX.
   button_solid:
     enable : true
-    label : "Buy tickets"
-    link : "pricing/"
+    # swap back to "Buy tickets" / "pricing/" once 2027 registration opens
+    label : "Become a sponsor"
+    link : "sponsorship/"
   button_outline:
     enable : true
     label : "Read more"
@@ -42,10 +44,11 @@ about:
 
 
 ################# Speaker ###################
+# set enable to true (and cfp_open to true) once the 2027 CFP opens
 speakers:
-  enable: true
+  enable: false
   cfp_open: false
-  cfp_link: https://pretalx.com/txlf2026/cfp
+  cfp_link: https://pretalx.com/txlf2027/cfp
   cfp_label: "Submit a talk to our _Call For Papers_"
   title : "Who is _Speaking?_"
   title_cfp: "Our _Call for Papers_ is Open!"
@@ -63,7 +66,7 @@ speakers:
   - Development
   content_cfp: "We invite you to be a part of this exceptional event by sharing your expertise and passion with the community. We are seeking engaging and insightful presentations that cover a broad range of topics related to Linux, open-source software, and the wider technology ecosystem. Whether you have hands-on experience, a new research breakthrough, or an inspiring vision for the future of Linux, we want to hear from you!"
   more_button_text: "Schedule"
-  more_button_link: https://pretalx.com/txlf2026/schedule/
+  more_button_link: https://pretalx.com/txlf2027/schedule/
 
   # speaker items are coming from "content/speakers" folder
 
@@ -72,163 +75,164 @@ tab:
   enable : false
   title : "Event _Schedule_"
   content : "The schedule of events is subject to change without prior notifications."
-  tablist:
-  # tab item
-  - name : "Day 1"
-    date : "November 6"
-    tablist_items:
+#   tablist:
+#   # tab item
+#   - name : "Day 1"
+#     date : "September 17"
+#     tablist_items:
 
-    - speaker: Dave Stokes
-      speaker_image: https://pretalx.com/media/avatars/DTASJP_WZqfA5E_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/TWFVVTZRFKRXD9AZZCHTWLPAWGSTRZCC
-      subject: Structured Query Language 101
-      venue: TBD
-      time: TBD
+#     - speaker: Dave Stokes
+#       speaker_image: https://pretalx.com/media/avatars/DTASJP_WZqfA5E_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/TWFVVTZRFKRXD9AZZCHTWLPAWGSTRZCC
+#       subject: Structured Query Language 101
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Alex Juarez
-      speaker_image: https://pretalx.com/media/avatars/SPNSYW_CetaB0m_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/AHHSYUPANDMS3APWB9JUXXY9GWCET9WA
-      subject: Build a Local RAG Lab with Lima and Ollama
-      venue: TBD
-      time: TBD
+#     - speaker: Alex Juarez
+#       speaker_image: https://pretalx.com/media/avatars/SPNSYW_CetaB0m_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/AHHSYUPANDMS3APWB9JUXXY9GWCET9WA
+#       subject: Build a Local RAG Lab with Lima and Ollama
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Sean Thrailkill
-      speaker_image: https://pretalx.com/media/avatars/CYW7SD_KkD2Ypv_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/UY9NMQHQ8RK3YNMYJQFHMQ9GV9LRN9HE
-      subject: "Confidential Computing: Verifiable and Sealed OS Images"
-      venue: TBD
-      time: TBD
+#     - speaker: Sean Thrailkill
+#       speaker_image: https://pretalx.com/media/avatars/CYW7SD_KkD2Ypv_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/UY9NMQHQ8RK3YNMYJQFHMQ9GV9LRN9HE
+#       subject: "Confidential Computing: Verifiable and Sealed OS Images"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: David Duncan
-      speaker_image: https://pretalx.com/media/avatars/XHYHRX_Eb2EJor_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/D7MBS9TSK7Q7YKBFPHBFMGWYXHHJWZ88
-      subject: RamaLama + Podman Quadlets — Build Task-Specific AI Services with systemd
-      venue: TBD
-      time: TBD
+#     - speaker: David Duncan
+#       speaker_image: https://pretalx.com/media/avatars/XHYHRX_Eb2EJor_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/D7MBS9TSK7Q7YKBFPHBFMGWYXHHJWZ88
+#       subject: RamaLama + Podman Quadlets — Build Task-Specific AI Services with systemd
+#       venue: TBD
+#       time: TBD
 
-  # tab item
-  - name : "Day 2"
-    date : "November 7"
-    tablist_items:
+#   # tab item
+#   - name : "Day 2"
+#     date : "September 18"
+#     tablist_items:
 
-    - speaker: Eric Hendricks
-      speaker_image: https://pretalx.com/media/avatars/LXEXJE_G2ALXhv_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/7XXTHTZGQKYV9EYMLYX8D8RND3SLJHM3
-      subject: "From Bash to Burnout: Staying Sane in a 24/7 Tech World"
-      venue: TBD
-      time: TBD
+#     - speaker: Eric Hendricks
+#       speaker_image: https://pretalx.com/media/avatars/LXEXJE_G2ALXhv_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/7XXTHTZGQKYV9EYMLYX8D8RND3SLJHM3
+#       subject: "From Bash to Burnout: Staying Sane in a 24/7 Tech World"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: KL Grady
-      speaker_image: https://www.socallinuxexpo.org/sites/default/files/styles/avatar_256x256_webp/public/2023-11/color%2520headshot.jpg.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/YLDCCBNF7S3EAW8WFW9T8PQNUTWA3XAA
-      subject: "Cauldron Ops: How a Bored Navy Wife Out-Shipped Enterprise Software"
-      venue: TBD
-      time: TBD
+#     - speaker: KL Grady
+#       speaker_image: https://www.socallinuxexpo.org/sites/default/files/styles/avatar_256x256_webp/public/2023-11/color%2520headshot.jpg.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/YLDCCBNF7S3EAW8WFW9T8PQNUTWA3XAA
+#       subject: "Cauldron Ops: How a Bored Navy Wife Out-Shipped Enterprise Software"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Carl Thompson
-      speaker_image: https://pretalx.com/media/avatars/BQLN3R_Zq8Y196_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/DTK3JNMCJJFQVWYZNQGUKKLAQQDKGFGD
-      subject: Effective HA (High Availability) Architecting
-      venue: TBD
-      time: TBD
+#     - speaker: Carl Thompson
+#       speaker_image: https://pretalx.com/media/avatars/BQLN3R_Zq8Y196_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/DTK3JNMCJJFQVWYZNQGUKKLAQQDKGFGD
+#       subject: Effective HA (High Availability) Architecting
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Steve Oualline
-      speaker_image: https://pretalx.com/txlf2026/speaker/avatar.svg
-      talk_link: https://pretalx.com/txlf2026/talk/review/LUMYSMFWVK9DKEKE8SPNEZRH8ZTLJFEB
-      subject: Experience using Linux to control the Southern California Railroad Museum's signal garden
-      venue: TBD
-      time: TBD
+#     - speaker: Steve Oualline
+#       speaker_image: https://pretalx.com/txlf2026/speaker/avatar.svg
+#       talk_link: https://pretalx.com/txlf2026/talk/review/LUMYSMFWVK9DKEKE8SPNEZRH8ZTLJFEB
+#       subject: Experience using Linux to control the Southern California Railroad Museum's signal garden
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Eduardo Robles
-      speaker_image: https://pretalx.com/media/avatars/KKKXGK_OZUfcs1_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/YZKBHLGFFMP98PK3USFVJXYGW9PJJLBD
-      subject: Attack of the AI Bots!!
-      venue: TBD
-      time: TBD
+#     - speaker: Eduardo Robles
+#       speaker_image: https://pretalx.com/media/avatars/KKKXGK_OZUfcs1_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/YZKBHLGFFMP98PK3USFVJXYGW9PJJLBD
+#       subject: Attack of the AI Bots!!
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Carl Perry
-      speaker_image: https://pretalx.com/media/avatars/AVSAQ9_APXZW3I_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/KFM3HGMR777P7CUCP9ABEFBMNANEMGUV
-      subject: "Linux and RISC-V: 2026 Edition"
-      venue: TBD
-      time: TBD
+#     - speaker: Carl Perry
+#       speaker_image: https://pretalx.com/media/avatars/AVSAQ9_APXZW3I_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/KFM3HGMR777P7CUCP9ABEFBMNANEMGUV
+#       subject: "Linux and RISC-V: 2026 Edition"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Neal Gompa & Shawn Dunn
-      speaker_image: https://pretalx.com/media/avatars/GSJ7WA_vwcvc5B_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/UHV778QDDSNPSCD3V8R7BZSJJSRH7TC9
-      subject: Transactional Systems in the Fedora Ecosystem
-      venue: TBD
-      time: TBD
+#     - speaker: Neal Gompa & Shawn Dunn
+#       speaker_image: https://pretalx.com/media/avatars/GSJ7WA_vwcvc5B_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/UHV778QDDSNPSCD3V8R7BZSJJSRH7TC9
+#       subject: Transactional Systems in the Fedora Ecosystem
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Elizabeth K. Joseph
-      speaker_image: https://pretalx.com/media/avatars/KB7PDK_t9Mx1nY_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/DJYGNE7J3HE7ENW837ELPKEZ3ZY7VPCK
-      subject: Growing Open Source in Closed Ecosystems
-      venue: TBD
-      time: TBD
+#     - speaker: Elizabeth K. Joseph
+#       speaker_image: https://pretalx.com/media/avatars/KB7PDK_t9Mx1nY_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/DJYGNE7J3HE7ENW837ELPKEZ3ZY7VPCK
+#       subject: Growing Open Source in Closed Ecosystems
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Alexander Shut
-      speaker_image: https://pretalx.com/media/avatars/KDTQRX_UVah4W5_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/PNUULA99UEWP9DHXPSVGQ8LXCGADSVVU
-      subject: "Stop Suffering: How I Built ProxUI to Fix My Homelab"
-      venue: TBD
-      time: TBD
+#     - speaker: Alexander Shut
+#       speaker_image: https://pretalx.com/media/avatars/KDTQRX_UVah4W5_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/PNUULA99UEWP9DHXPSVGQ8LXCGADSVVU
+#       subject: "Stop Suffering: How I Built ProxUI to Fix My Homelab"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Thomas Cameron
-      speaker_image: https://pretalx.com/media/avatars/BDYMQL_qLQBcrP_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/9XNSSLDCZGBCSTFJL8SNEJFTT998NDZQ
-      subject: "Enterprise Kubernetes at Home: A Homelabber's Guide to OKD"
-      venue: TBD
-      time: TBD
+#     - speaker: Thomas Cameron
+#       speaker_image: https://pretalx.com/media/avatars/BDYMQL_qLQBcrP_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/9XNSSLDCZGBCSTFJL8SNEJFTT998NDZQ
+#       subject: "Enterprise Kubernetes at Home: A Homelabber's Guide to OKD"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Sophia Solomon
-      speaker_image: images/speakers/sophia-solomon-thumb.jpg
-      talk_link: https://pretalx.com/txlf2026/talk/review/SZ7UZXPHSUXQUQJ8JL8DQQLN73VNXZL9
-      subject: How to Upgrade Your System Like a jRPG
-      venue: TBD
-      time: TBD
+#     - speaker: Sophia Solomon
+#       speaker_image: images/speakers/sophia-solomon-thumb.jpg
+#       talk_link: https://pretalx.com/txlf2026/talk/review/SZ7UZXPHSUXQUQJ8JL8DQQLN73VNXZL9
+#       subject: How to Upgrade Your System Like a jRPG
+#       venue: TBD
+#       time: TBD
 
-    - speaker: William Braswell
-      speaker_image: https://pretalx.com/media/avatars/98AJQH_JBJKHP3_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/HTBZNGLR7YSLK7HUEGBCRWZGA3TBN7T7
-      subject: Perl is Dead... Right?!?
-      venue: TBD
-      time: TBD
+#     - speaker: William Braswell
+#       speaker_image: https://pretalx.com/media/avatars/98AJQH_JBJKHP3_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/HTBZNGLR7YSLK7HUEGBCRWZGA3TBN7T7
+#       subject: Perl is Dead... Right?!?
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Christopher Hobbs
-      speaker_image: https://pretalx.com/media/avatars/WHQPZJ_fh2W9Ei_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/GCQRWZN9DHLJCBLRMWACZFBRLXZHAPAC
-      subject: "Podman: A Practical Tour"
-      venue: TBD
-      time: TBD
+#     - speaker: Christopher Hobbs
+#       speaker_image: https://pretalx.com/media/avatars/WHQPZJ_fh2W9Ei_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/GCQRWZN9DHLJCBLRMWACZFBRLXZHAPAC
+#       subject: "Podman: A Practical Tour"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Kevin Purdy
-      speaker_image: https://pretalx.com/media/avatars/3PQDZT_rqvBkhh_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/MLHZQ7FGLHGBFGX9FL7LCEBFEY9L3CCY
-      subject: "Recruit your friends into a backup cult: Encrypted off-site redundancy with Kopia, Immich, and rclone"
-      venue: TBD
-      time: TBD
+#     - speaker: Kevin Purdy
+#       speaker_image: https://pretalx.com/media/avatars/3PQDZT_rqvBkhh_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/MLHZQ7FGLHGBFGX9FL7LCEBFEY9L3CCY
+#       subject: "Recruit your friends into a backup cult: Encrypted off-site redundancy with Kopia, Immich, and rclone"
+#       venue: TBD
+#       time: TBD
 
-    - speaker: Major Hayden
-      speaker_image: https://pretalx.com/media/avatars/HL3AYD_gmYP4FE_thumbnail_default.webp
-      talk_link: https://pretalx.com/txlf2026/talk/review/9KKNS7GE3X38KWNCDJ7A3LN7B9JFNHDQ
-      subject: Thou Shalt Not Make a Machine in the Likeness of a Senior Engineer
-      venue: TBD
-      time: TBD
+#     - speaker: Major Hayden
+#       speaker_image: https://pretalx.com/media/avatars/HL3AYD_gmYP4FE_thumbnail_default.webp
+#       talk_link: https://pretalx.com/txlf2026/talk/review/9KKNS7GE3X38KWNCDJ7A3LN7B9JFNHDQ
+#       subject: Thou Shalt Not Make a Machine in the Likeness of a Senior Engineer
+#       venue: TBD
+#       time: TBD
 
 
 ############ Interviews ######################
 interviews:
   enable: false
   title: "Interviews"
-  content: "TXLF 2026 Interviews"
+  content: "TXLF 2027 Interviews"
 
 
 ############ Registration ####################
+# re-enable registration, pricing and call_to_action once 2027 registration opens
 registration:
-  enable : true
-  title : "Register to _Texas Linux Festival 2026_"
-  content : "**Registration for Texas Linux Festival 2026 is now open!**"
+  enable : false
+  title : "Register to _Texas Linux Festival 2027_"
+  content : "**Registration for Texas Linux Festival 2027 is now open!**"
   form_action : "#" # works with formspree.io
   hide_form: true
   link : "pricing/"
@@ -252,9 +256,9 @@ registration:
 
 ############ Pricing ####################
 pricing:
-  enable : true
+  enable : false
   title : "Get _Tickets_"
-  content : "Event Pricing for Texas Linux Festival 2026."
+  content : "Event Pricing for Texas Linux Festival 2027."
   pricing_table:
 #  - name : "Early Bird - Supporter"
 #    price : "85.00"
@@ -302,7 +306,7 @@ pricing:
 sponsorship_pricing:
   enable : true
   title : "Sponsorship _Prospectus_"
-  content : "Sponsorship pricing for Texas Linux Festival 2026. Help make TXLF possible!"
+  content : "Sponsorship pricing for Texas Linux Festival 2027. Help make TXLF possible!"
   pricing_table:
   - name: |
       Diamond
@@ -366,12 +370,91 @@ sponsorship_pricing:
     - "Logo placement on the website"
     - "Booth in the expo hall"
 
+  - name : "Track"
+    price : "1500"
+    price_per : "Sponsor"
+    button_link : "contact/"
+    description: "Sponsor one of the presentation rooms at Texas Linux Fest."
+    features:
+    - "Logo on all signs related to the track"
+    - "A short announcement about your organization, products or services before each presentation in your track"
+    - "Helps make TXLF possible!"
+
+  - name : "Lanyard"
+    price : "1000"
+    price_per : "Sponsor"
+    button_link : "contact/"
+    description: "Every attendee gets a badge and a lanyard. Be the logo on that lanyard."
+    features:
+    - "Your logo on every attendee lanyard"
+    - "Single color printing; additional colors and designs available for an additional fee"
+    - "Helps make TXLF possible!"
+
+  - name : "Tote Bag Insert"
+    price : "500"
+    price_per : "Insert"
+    button_link : "contact/"
+    description: "Include a single item in the tote bag received by each attendee. This can also be added to any existing sponsorship for additional tote bag inserts."
+    features:
+    - "One item in every attendee tote bag"
+    - "Helps make TXLF possible!"
+
+  - name : "Coffee & Tea"
+    price : "3000"
+    price_per : "Day"
+    button_link : "contact/"
+    description: "TXLF attendees love their coffee and tea. Put your name on the beverage table and associate your brand with everyone's favorite stop of the day."
+    features:
+    - "Logo on all materials at the coffee & tea table"
+    - "Helps make TXLF possible!"
+
+  - name : "Saturday Food"
+    button_text: "Contact us about the Saturday Food Sponsorship"
+    price : "Contact Us"
+    price_per : "Sponsor"
+    button_link : "contact/"
+    description: "Keep attendees fueled on our busiest day by sponsoring Saturday's food."
+    features:
+    - "Recognition as the Saturday food sponsor"
+    - "Helps make TXLF possible!"
+
+  - name : "After Party"
+    button_text: "Contact us about the After Party Sponsorship"
+    price : "Contact Us"
+    price_per : "Sponsor"
+    button_link : "contact/"
+    description: "Host the TXLF After Party, where attendees, speakers and sponsors gather to discuss the day's events and connect after the conference."
+    features:
+    - "Promotion and mention on everything referring to the After Party, including the schedule"
+    - "A mention at the event"
+    - "Helps make TXLF possible!"
+
+  - name : "Bag/T-Shirt"
+    button_text: "Contact us about the Bag/T-Shirt Sponsorship"
+    price : "Contact Us"
+    price_per : "Sponsor"
+    button_link : "contact/"
+    description: "Put your logo on the conference bags or t-shirts that attendees take home and keep using long after the event."
+    features:
+    - "Logo on conference bags or t-shirts"
+    - "Helps make TXLF possible!"
+
+  - name : "AV and Accelerated Network"
+    button_text: "Contact us about the AV and Accelerated Network Sponsorship"
+    price : "Contact Us"
+    price_per : "Sponsor"
+    button_link : "contact/"
+    description: "Keep everyone connected and help us record the talks by sponsoring the conference network and audio/video, including the video recordings of presentations."
+    features:
+    - "Recognition as the AV and Accelerated Network sponsor"
+    - "Helps make TXLF possible!"
+
 ############### Call to action ############
 call_to_action:
-  enable : true
+  enable : false
   title : "Get Tickets _Now!_"
   image : "images/speakers/speaker-ticket.png"
-  content : "Register for TXLF2026 today!"
+  content : "Register for TXLF2027 today!"
   button:
     enable : true
     label : "Buy tickets"
@@ -380,165 +463,165 @@ call_to_action:
 ############### Sponsors ##################
 sponsors:
   enable : true
-  hide_sponsors_on_homepage: false
+  hide_sponsors_on_homepage: true # set to false once 2027 sponsors are listed below
   title : "Our _Sponsors_"
   content : "Our sponsors allow us to continue to provide conferences!"
-  content_hidden_sponsors: "Our sponsors allow us to continue to provide conferences!"
+  content_hidden_sponsors: "Sponsorship for Texas Linux Festival 2027 is open. Our sponsors allow us to continue to provide conferences!"
   button:
     enable : true
     label : "Become a sponsor"
     link : "/sponsorship"
-  sponsor_group:
-  #- name: "Diamond sponsor"
-  #  sponsor_item:
-  #  - name: "Scinary Cybersecurity"
-  #    logo: "images/sponsors/diamond-spon-one.png"
-  #    link : "https://www.scinary.com"
+  sponsor_group: # 2026 sponsors, kept for reference. Replace as 2027 sponsors sign on.
+#   #- name: "Diamond sponsor"
+#   #  sponsor_item:
+#   #  - name: "Scinary Cybersecurity"
+#   #    logo: "images/sponsors/diamond-spon-one.png"
+#   #    link : "https://www.scinary.com"
 
-  #- name : "Platinum Sponsors"
-  #  sponsor_item:
-  #    - name: "Rackspace"
-  #      logo: "images/sponsors/rackspace.png"
-  #      link: "https://www.rackspace.com/cloud/openstack-flex"
+#   #- name : "Platinum Sponsors"
+#   #  sponsor_item:
+#   #    - name: "Rackspace"
+#   #      logo: "images/sponsors/rackspace.png"
+#   #      link: "https://www.rackspace.com/cloud/openstack-flex"
 
-  - name : "Gold Sponsors"
-    sponsor_item:
-      - name: Coder
-        logo: images/sponsors/coder.png
-        link: https://coder.com
+#   - name : "Gold Sponsors"
+#     sponsor_item:
+#       - name: Coder
+#         logo: images/sponsors/coder.png
+#         link: https://coder.com
 
-  #     - name: "Percona"
-  #       logo: "images/sponsors/percona.png"
-  #       link: "https://www.percona.com/"
-  #
-  #    - name: "rezoomex"
-  #      logo: "images/sponsors/rezoomex_logo.svg"
-  #      link: "https://rezoomex.com"
-  #
-  #    - name: "Akuity"
-  #      logo: "images/sponsors/akuity.svg"
-  #      link: "https://akuity.io"
-  #
-  #    - name: "AWS"
-  #      logo: "images/sponsors/aws.svg"
-  #      link: "https://aws.amazon.com/opensource/"
-  #
-  - name : "Silver Sponsors"
-    sponsor_item:
-      - name: 45HomeLab
-        logo: images/sponsors/45homelab.svg
-        link: https://45homelab.com
+#   #     - name: "Percona"
+#   #       logo: "images/sponsors/percona.png"
+#   #       link: "https://www.percona.com/"
+#   #
+#   #    - name: "rezoomex"
+#   #      logo: "images/sponsors/rezoomex_logo.svg"
+#   #      link: "https://rezoomex.com"
+#   #
+#   #    - name: "Akuity"
+#   #      logo: "images/sponsors/akuity.svg"
+#   #      link: "https://akuity.io"
+#   #
+#   #    - name: "AWS"
+#   #      logo: "images/sponsors/aws.svg"
+#   #      link: "https://aws.amazon.com/opensource/"
+#   #
+#   - name : "Silver Sponsors"
+#     sponsor_item:
+#       - name: 45HomeLab
+#         logo: images/sponsors/45homelab.svg
+#         link: https://45homelab.com
 
-      - name: Rackspace
-        logo: images/sponsors/rackspace.svg
-        link: https://rackspace.com
+#       - name: Rackspace
+#         logo: images/sponsors/rackspace.svg
+#         link: https://rackspace.com
 
-      - name : Red Hat
-        logo : "images/sponsors/redhat.svg"
-        link: "https://www.redhat.com"
+#       - name : Red Hat
+#         logo : "images/sponsors/redhat.svg"
+#         link: "https://www.redhat.com"
 
-      - name: "elastic"
-        logo: "images/sponsors/elastic.svg"
-        link: "https://www.elastic.co"
+#       - name: "elastic"
+#         logo: "images/sponsors/elastic.svg"
+#         link: "https://www.elastic.co"
 
-  #   sponsor_item:
-  #     - name : "Framework"
-  #       logo : "images/sponsors/framework.svg"
-  #       link: "https://frame.work/"
+#   #   sponsor_item:
+#   #     - name : "Framework"
+#   #       logo : "images/sponsors/framework.svg"
+#   #       link: "https://frame.work/"
 
-      - name: "AlmaLinux"
-        logo: "images/sponsors/almalinux.png"
-        link: "https://almalinux.org"
+#       - name: "AlmaLinux"
+#         logo: "images/sponsors/almalinux.png"
+#         link: "https://almalinux.org"
 
-  - name : "After-party Sponsor"
-    sponsor_item:
-      - name: "Meta"
-        logo: "images/sponsors/meta.png"
-        link: "https://about.meta.com"
-  #
-  #
-  #    - name: "Cosmonic"
-  #      logo: "images/sponsors/cosmonic.png"
-  #      link: "https://cosmonic.com/"
-  #
-  - name: "Track Sponsors"
-    sponsor_item:
-       - name: "Chainguard"
-         logo: "images/sponsors/chainguard-logo-purple.png"
-         link: "https://www.chainguard.dev"
+#   - name : "After-party Sponsor"
+#     sponsor_item:
+#       - name: "Meta"
+#         logo: "images/sponsors/meta.png"
+#         link: "https://about.meta.com"
+#   #
+#   #
+#   #    - name: "Cosmonic"
+#   #      logo: "images/sponsors/cosmonic.png"
+#   #      link: "https://cosmonic.com/"
+#   #
+#   - name: "Track Sponsors"
+#     sponsor_item:
+#        - name: "Chainguard"
+#          logo: "images/sponsors/chainguard-logo-purple.png"
+#          link: "https://www.chainguard.dev"
 
-  # - name: After Party Sponsors
-  #   link: party/
-  #   sponsor_item:
-  #     - name: Meta
-  #       logo: images/sponsors/meta.png
-  #       link: https://about.meta.com
+#   # - name: After Party Sponsors
+#   #   link: party/
+#   #   sponsor_item:
+#   #     - name: Meta
+#   #       logo: images/sponsors/meta.png
+#   #       link: https://about.meta.com
 
-  - name: "Exhibitors"
-    sponsor_item:
-      - name: Austin RISC-V
-        logo: images/sponsors/risc-v.webp
-        link: https://austinriscv.club
+#   - name: "Exhibitors"
+#     sponsor_item:
+#       - name: Austin RISC-V
+#         logo: images/sponsors/risc-v.webp
+#         link: https://austinriscv.club
 
-      - name: Fedora
-        logo: images/sponsors/fedora.svg
-        link: https://fedoraproject.org
+#       - name: Fedora
+#         logo: images/sponsors/fedora.svg
+#         link: https://fedoraproject.org
 
-      - name: CentOS
-        logo: images/sponsors/centos.svg
-        link: https://centos.org
+#       - name: CentOS
+#         logo: images/sponsors/centos.svg
+#         link: https://centos.org
 
-      - name: Free Software Foundation
-        logo: images/sponsors/fsf.png
-        link: https://fsf.org
+#       - name: Free Software Foundation
+#         logo: images/sponsors/fsf.png
+#         link: https://fsf.org
 
-      - name: DEVSA
-        logo: images/sponsors/devsa.svg
-        link: https://www.devsa.community
+#       - name: DEVSA
+#         logo: images/sponsors/devsa.svg
+#         link: https://www.devsa.community
 
-      - name: PostgreSQL
-        logo: images/sponsors/postgresql.png
-        link: https://www.postgresql.org
+#       - name: PostgreSQL
+#         logo: images/sponsors/postgresql.png
+#         link: https://www.postgresql.org
 
-      - name: Butter, What?!
-        logo: images/sponsors/butterwhat.png
-        link: https://butterwhat.com/
+#       - name: Butter, What?!
+#         logo: images/sponsors/butterwhat.png
+#         link: https://butterwhat.com/
 
-      - name: Rocky Linux
-        logo: images/sponsors/rocky-linux.png
-        link: https://www.rockylinux.org
+#       - name: Rocky Linux
+#         logo: images/sponsors/rocky-linux.png
+#         link: https://www.rockylinux.org
 
-  #    - name: "PyTexas"
-  #      logo: "images/sponsors/pytexas.png"
-  #      link: "https://www.pytexas.org"
-  #
-  - name : "Community Sponsors"
-    sponsor_item:
-      - name : "Commit Your Code"
-        logo : "images/sponsors/commit-your-code.svg"
-        link : "https://commityourcode.com"
+#   #    - name: "PyTexas"
+#   #      logo: "images/sponsors/pytexas.png"
+#   #      link: "https://www.pytexas.org"
+#   #
+#   - name : "Community Sponsors"
+#     sponsor_item:
+#       - name : "Commit Your Code"
+#         logo : "images/sponsors/commit-your-code.svg"
+#         link : "https://commityourcode.com"
 
-  - name: "Media & Swag"
-    sponsor_item:
-      - name: Jupiter Broadcasting
-        logo: images/sponsors/jupiterbroadcasting.png
-        link: https://jupiterbroadcasting.com
+#   - name: "Media & Swag"
+#     sponsor_item:
+#       - name: Jupiter Broadcasting
+#         logo: images/sponsors/jupiterbroadcasting.png
+#         link: https://jupiterbroadcasting.com
 
-  #     - name: "Linux Magazine"
-  #       logo: "images/sponsors/linux-magazine.png"
-  #       link: "https://www.linux-magazine.com/"
+#   #     - name: "Linux Magazine"
+#   #       logo: "images/sponsors/linux-magazine.png"
+#   #       link: "https://www.linux-magazine.com/"
 
-  #     - name: "Open Source Job Hub"
-  #       logo: "images/sponsors/open-source-job-hub.png"
-  #       link: "https://opensourcejobhub.com/"
+#   #     - name: "Open Source Job Hub"
+#   #       logo: "images/sponsors/open-source-job-hub.png"
+#   #       link: "https://opensourcejobhub.com/"
 
-  #     - name: "Kube Events"
-  #       logo: "images/sponsors/kube-events.png"
-  #       link: "https://kube.events/"
+#   #     - name: "Kube Events"
+#   #       logo: "images/sponsors/kube-events.png"
+#   #       link: "https://kube.events/"
 
-  #     - name: "Kube Careers"
-  #       logo: "images/sponsors/kube-careers.png"
-  #       link: "https://kube.careers/"
+#   #     - name: "Kube Careers"
+#   #       logo: "images/sponsors/kube-careers.png"
+#   #       link: "https://kube.careers/"
 
 ############### FAQ ##################
 faq:
@@ -550,7 +633,7 @@ faq:
 
   - question : "Covid 2020 Cancellation Ticket Redemption"
     ref : "covid-2020-cancellation-ticket-redemption"
-    answer : "If you purchased a ticket during our planned 2020 Texas Linux Festival that was cancelled due to COVID health concerns.  If you'd like to redeem this for the 2026 event, reach out to info@texaslinuxfest.org for registration if you did not receive a coupon code by email. Please provide your receipt.If you'd like a refund instead, reach out to info@texaslinuxfest.org and provide your receipt."
+    answer : "If you purchased a ticket during our planned 2020 Texas Linux Festival that was cancelled due to COVID health concerns.  If you'd like to redeem this for the 2027 event, reach out to info@texaslinuxfest.org for registration if you did not receive a coupon code by email. Please provide your receipt.If you'd like a refund instead, reach out to info@texaslinuxfest.org and provide your receipt."
 
 ############ Contact ####################
 contact:

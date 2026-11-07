@@ -1,6 +1,6 @@
-# Texas Linux Fest 2026 website
+# Texas Linux Fest 2027 website
 
-This repository contains the source code for [2026.texaslinuxfest.org][txlf].
+This repository contains the source code for [2027.texaslinuxfest.org][txlf].
 It uses the [Hugo framework][hugo] with the [Eventre theme][eventre].
 
 If you are making changes to the talks or speakers,
@@ -25,6 +25,6 @@ run the following command:
 hugo server
 ```
 
-[txlf]: https://2026.texaslinuxfest.org/
+[txlf]: https://2027.texaslinuxfest.org/
 [hugo]: https://gohugo.io/
 [eventre]: https://docs.gethugothemes.com/eventre/

@@ -24,7 +24,7 @@
             </div>
             <!-- Price -->
             <div class="price">
-              <h2><span>$</span>{{ .price | markdownify }}</h2>
+              <h2>{{ if findRE `^[0-9]` (string .price) }}<span>$</span>{{ end }}{{ .price | markdownify }}</h2>
               <p>/{{ .price_per }}</p>
             </div>
           </div>

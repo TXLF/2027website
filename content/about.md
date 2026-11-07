@@ -2,7 +2,7 @@
 title : "About"
 page_header_bg : "images/background/page-title-bg.jpg"
 date: 2020-03-14T15:40:24+06:00
-description : "Texas Linux Fest 2026 - About"
+description : "Texas Linux Fest 2027 - About"
 draft : false
 layout : "about"
 image : "images/about-logo.png"
@@ -48,4 +48,4 @@ Latest announcements and activity can be followed on the [Home Page](/).
 
 ----
 
-Interested in more? Check out the [Volunteer Page](/volunteer) or contact us with more questions by emailing us at info@texaslinuxfest.org.
+Interested in more? Check out the [Volunteer Page](/volunteering) or contact us with more questions by emailing us at info@texaslinuxfest.org.

@@ -1,7 +1,7 @@
 ---
 title: "After Party"
 page_header_bg: images/background/lavaca.jpg
-description: "Texas Linux Fest 2026 - After Party"
+description: "Texas Linux Fest 2027 - After Party"
 layout: "party"
 ignore_header: true
 ---

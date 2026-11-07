@@ -2,7 +2,7 @@
 title : "Volunteering"
 page_header_bg : "images/background/page-title-bg.jpg"
 date: 2020-03-14T15:40:24+06:00
-description : "Texas Linux Fest 2026 - Volunteering"
+description : "Texas Linux Fest 2027 - Volunteering"
 draft : false
 layout : "single"
 ignore_header: true
@@ -17,7 +17,14 @@ Texas Linux Fest 2026 was another huge success and it would not have been possib
 To help TXLF continue to grow, we simply need more help from you. We’re looking for people with a range of skill sets and there are many opportunities to help. If you’d like to help please drop us a line at info@texaslinuxfest.org and include the areas where you think you’ll be able to help! Again we are looking for year-round dedicated core staff, that will require varying amounts of time throughout the year depending on the job at hand.
 <br /><br />
 
-**Places where we need help:**
+**Volunteer roles:**
+
+- **Room Proctor:** Keep speakers on time and operate a simple camera, turning the recording on and off for talks.
+- **T-shirt Assistant:** Help hand out t-shirts to attendees whose tickets include one.
+- **Registration:** Help people check in, and give checked-in attendees their printed badges and lanyards. You may also need to answer questions about the schedule or help attendees with check-in.
+- **Media & Marketing:** Help spread the word in communities about our upcoming event and how to participate. You can also help create media, such as images, videos, and designs for stickers and t-shirts.
+
+**Year-round, we also need help with:**
 
 - Venue Search & Coordination
 - Website/Social Media Marketing
