@@ -18,6 +18,9 @@ make sure to update the following files:
 - `data/homepage.yml`
 - `static/images/sponsors/<name>.<extension>`
 
+The stylesheets are compiled with [Dart Sass][dartsass],
+so install it first (for example, `brew install sass/sass/sass` on macOS).
+
 To preview your changes locally before submitting a pull request,
 run the following command:
 
@@ -28,3 +31,4 @@ hugo server
 [txlf]: https://2027.texaslinuxfest.org/
 [hugo]: https://gohugo.io/
 [eventre]: https://docs.gethugothemes.com/eventre/
+[dartsass]: https://sass-lang.com/dart-sass/

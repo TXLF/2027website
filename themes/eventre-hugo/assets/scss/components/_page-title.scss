@@ -1,8 +1,10 @@
+@use "../variables";
+
 .page-title{
 	position: relative;
 	padding: 165px 0 65px;
 	h3, li, a{
-		color: $light;
+		color: variables.$light;
 	}
 	.title{
 		h3{
@@ -17,13 +19,13 @@
 			display: inline-block;
 			text-transform: uppercase;
 			&.active{
-				color: $light;
+				color: variables.$light;
 			}
 		}
 		.breadcrumb-item+.breadcrumb-item::before{
 			content: "\f105";
 			font-family: FontAwesome;
-			color: $light;
+			color: variables.$light;
 		}
 	}
 }

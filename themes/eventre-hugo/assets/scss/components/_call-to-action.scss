@@ -1,15 +1,19 @@
+@use "sass:color";
+@use "../media-queries";
+@use "../variables";
+
 .cta-ticket{
 	position: relative;
 	.content-block{
 		padding: 100px 0;
 		h2{
-			color: $light;
+			color: variables.$light;
 			text-transform: uppercase;
 			font-weight: 400;
 			margin-bottom: 15px;
 		}
 		p{
-			color: darken($light, 10%);
+			color: color.adjust(variables.$light, $lightness: -10%);
 			margin-bottom: 45px;
 		}
 	}
@@ -17,7 +21,7 @@
 		position: absolute;
 		right: 5%;
 		bottom: 0;
-		@include tablet {
+		@include media-queries.tablet {
 			display: none;
 		}
 	}
@@ -28,7 +32,7 @@
 	.content{
 		padding: 70px 0;
 		h3,p{
-			color: $light;
+			color: variables.$light;
 		}
 		h3{
 			font-weight: 500;
@@ -41,7 +45,7 @@
 		button{
 			cursor: pointer;	
 		}
-		@include tablet {
+		@include media-queries.tablet {
 			margin-bottom: 30px;
 		}
 	}

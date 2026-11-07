@@ -1,8 +1,13 @@
+@use "sass:color";
+@use "../media-queries";
+@use "../variables";
+@use "../common";
+
 // Banner Styles
 .banner{
 	padding: 250px 0 150px;
 	position: relative;
-	@include desktop {
+	@include media-queries.desktop {
 		padding: 100px 0;
 	}
 	.block{
@@ -13,27 +18,27 @@
 		        margin-right: 25px;
 		        margin-bottom: 33px;
 		        display:inline-block;
-		        @include mobile {
+		        @include media-queries.mobile {
 		        	margin-right: 10px;
 		        	margin-bottom: 20px;
 		        }
 		        .syotimer-cell__value {
 		        	min-width: 80px;
-		        	font-family: $secondary-font;
+		        	font-family: variables.$secondary-font;
 					font-size: 35px;
 					line-height: 77px;
 					text-align: center;
 					position: relative;
 					font-weight: bold;
-					color: $light;
+					color: variables.$light;
 					border: 2px solid #7c7491;
 					margin-bottom: 8px;
 					border-radius: 100%;
 			        box-shadow: 3.5px 6.062px 0px 0px rgba(0, 0, 0, 0.1);
-			        @include mobile {
+			        @include media-queries.mobile {
 			        	font-size: 30px;
 					}
-					@include mobile-xs{
+					@include media-queries.mobile-xs{
 						min-width: 65px;
 						line-height: 61px;
 						font-size: 25px;
@@ -44,21 +49,21 @@
 					font-size: 1rem;
 					text-transform: lowercase;
 					font-weight:normal;
-					color: $light;
-					font-family: $secondary-font;
+					color: variables.$light;
+					font-family: variables.$secondary-font;
 		        }
 		      }
 		}
 		h1{
 			text-transform: uppercase;
 			font-size: 5.5rem;
-			color: $primary-color;
+			color: variables.$primary-color;
 			font-weight: 500;
 			margin-bottom: 5px;
-			@include tablet {
+			@include media-queries.tablet {
 				font-size: 4rem;
 			}
-			@include mobile-xs{
+			@include media-queries.mobile-xs{
 				font-size: 3rem;
 			}
 	        text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
@@ -66,19 +71,19 @@
 		h2{
 			text-transform: uppercase;
 			font-size: 4.625rem;
-			color: $light;
+			color: variables.$light;
 			font-weight: 400;
 	        text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
 			font-style: italic;
-			@include tablet {
+			@include media-queries.tablet {
 				font-size: 3.2rem;
 			}
-			@include mobile-xs{
+			@include media-queries.mobile-xs{
 				font-size: 2.3rem;
 			}
 		}
 		h6{
-			color: $light;
+			color: variables.$light;
 			font-weight: 400;
 			margin-bottom: 50px;
 		}
@@ -91,9 +96,9 @@
 	overflow: hidden;
 	.block{
 		h1{
-			color: $primary-color;
+			color: variables.$primary-color;
 			font-size: 88px;
-			@include mobile{
+			@include media-queries.mobile{
 				font-size: 40px;
 			}
 		}
@@ -102,13 +107,13 @@
 			text-transform: uppercase;
 			font-size: 74px;
 			margin-bottom: 10px;
-			@include mobile{
+			@include media-queries.mobile{
 				font-size: 35px;
 			}
 		}
 		h3{
 			font-size: 74px;
-			@include mobile{
+			@include media-queries.mobile{
 				font-size: 35px;
 			}
 		}
@@ -116,7 +121,7 @@
 			margin-top: 48px;
 			font-weight: 400;
 			margin-bottom: 60px;
-			@include mobile{
+			@include media-queries.mobile{
 				margin-top: 30px;
 			}
 		}
@@ -130,7 +135,7 @@
 			border-radius: 100%;
 			box-shadow: 0px 0px 59px 0px rgba(11, 29, 66, 0.15);
 		}
-		@include tablet {
+		@include media-queries.tablet {
 			margin-bottom: 30px;
 			text-align: center;
 		}
@@ -140,7 +145,7 @@
 			img{
 				border-radius: 0;
 				transform: translate(30px, -30px);
-				@include tablet{
+				@include media-queries.tablet{
 					transform: translate(0, -30px);
 				}
 			}
@@ -148,7 +153,7 @@
 	}
 	.content-block{
 		margin-left: 15px;
-		@include tablet {
+		@include media-queries.tablet {
 			text-align: center;
 		}
 		h2{
@@ -156,10 +161,10 @@
 				content: "";
 				width: 60px;
 				height: 3px;
-				background: $primary-color;
+				background: variables.$primary-color;
 				display: block;
 				margin-top: 10px;
-				@include tablet {
+				@include media-queries.tablet {
 					margin: auto;
 				}
 			}
@@ -167,7 +172,7 @@
 		}
 		.description-one{
 			p{
-				color: $text-color;
+				color: variables.$text-color;
 				font-size: 1.0625rem;
 			}
 			margin-bottom: 20px;
@@ -180,17 +185,17 @@
 		}
 		ul.list-inline{
 			.list-inline-item{
-				@include mobile{
+				@include media-queries.mobile{
 					display: block;
 				}
 			}
 		}
 		.list-inline-item:not(:last-child) {
 		    margin-right: 20px;
-		    @include desktop-sm {
+		    @include media-queries.desktop-sm {
 		    	margin-bottom: 10px;
 			}
-			@include mobile{
+			@include media-queries.mobile{
 				margin-right: 0;
 			}
 		}
@@ -201,15 +206,15 @@
 	position: relative;
 	&.white{
 		.speaker-item{
-			background: $light;
-			border: 1px solid $border-color;
+			background: variables.$light;
+			border: 1px solid variables.$border-color;
 			&:hover{
 				@extend .shadow;
 			}
 		}
 	}
 	.speaker-item{
-		background: $gray;
+		background: variables.$gray;
 		padding: 7px;
 		margin-bottom: 30px;
 		.image{
@@ -217,7 +222,7 @@
 			position: relative;
 			overflow: hidden;
 			img{
-				@include mobile {
+				@include media-queries.mobile {
 					width: 100% !important;
 				}
 			}
@@ -227,7 +232,7 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background: $primary-color;
+				background: variables.$primary-color;
 				opacity: .85;
 				transition: .3s ease;
 			}
@@ -242,7 +247,7 @@
 				transition: .4s ease;
 				ul{
 					width: 50%;
-					@include large-desktop{
+					@include media-queries.large-desktop{
 						width: 100%;
 						text-align: center;
 						padding: 0 20px;
@@ -257,13 +262,13 @@
 						&.list-inline-item:not(:last-child){
 							margin-right: 7px;
 							margin-bottom: 10px;
-							@include large-desktop{
+							@include media-queries.large-desktop{
 								margin-right: 5px;
 								margin-left: 5px;
 							}
 						}
 						&.list-inline-item:last-child{
-							@include large-desktop{
+							@include media-queries.large-desktop{
 								margin-right: 5px;
 								margin-left: 5px;
 							}
@@ -273,16 +278,16 @@
 							height: 50px;
 							width: 50px;
 							text-align: center;
-							border: 1px solid $light;
+							border: 1px solid variables.$light;
 							i{
 								font-size: .9375rem;
-								color: $light;
+								color: variables.$light;
 								line-height: 50px;
 							}
 							&:hover{
-								background: $light;
+								background: variables.$light;
 								i{
-									color: $black;
+									color: variables.$black;
 								}
 							}
 						}
@@ -302,11 +307,11 @@
 			h5{
 				a{
 					font-size: 22px;
-					color: $black;
+					color: variables.$black;
 					font-weight: 400;
 					margin-bottom: 0;
 					&:hover{
-						color: $primary-color;
+						color: variables.$primary-color;
 					}
 				}
 			}
@@ -326,7 +331,7 @@
 					font-weight: 400;
 					margin-bottom: 0;
 					&:hover{
-						color: $primary-color;
+						color: variables.$primary-color;
 					}
 				}
       }
@@ -338,7 +343,7 @@
 	.container{
 		padding-left: 0px;
 		padding-right: 0px;
-		@include desktop-sm {
+		@include media-queries.desktop-sm {
 			max-width: 991px;
 		}
 		.row{
@@ -364,34 +369,34 @@
 		ul{
 			li.nav-item{
 				margin-right: 10px;
-				@include tablet {
+				@include media-queries.tablet {
 					width: 100%;
 					margin-bottom: 10px;
 				}
 				a{
-					font-family: $secondary-font;
+					font-family: variables.$secondary-font;
 					text-transform: uppercase;
 					font-size: 1.5rem; //24px
-					color: $primary-color;
+					color: variables.$primary-color;
 					font-weight: 500;
 					display: block;
 					border-radius: 0;
-					border: 1px solid $border-color;
+					border: 1px solid variables.$border-color;
 					padding: 20px 30px;
 					span{
 						margin-top: 2px;
-						font-family: $primary-font;
+						font-family: variables.$primary-font;
 						display: block;
 						font-size: 1rem;
-						color: $text-color;
+						color: variables.$text-color;
 						font-weight: 400;
 					}
 					&.active{
-						background: $primary-color;
-						color: $light;
+						background: variables.$primary-color;
+						color: variables.$light;
 						position: relative;
 						span{
-							color: $light;
+							color: variables.$light;
 						}
 						&:after{
 							content: '';
@@ -402,8 +407,8 @@
 							height: 0;
 							border-style: solid;
 							border-width: 0 20px 20px 0;
-							border-color: transparent $primary-color transparent transparent;
-							@include tablet {
+							border-color: transparent variables.$primary-color transparent transparent;
+							@include media-queries.tablet {
 								content: none;
 							}
 						}
@@ -426,55 +431,55 @@
 					.time{
 						padding: 0px 5px 0px 0px;
 						width: 20%;
-						@include large-desktop {
+						@include media-queries.large-desktop {
 							width: 12%;
 							i.fa-clock {
 								display: none;
 							}
 						}
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							width: 16%;
 						}
-						@include tablet {
+						@include media-queries.tablet {
 							width: 24%;
 						}
 					}
 					.speaker{
 						padding: 0px 5px;
 						width: 35%;
-						@include large-desktop {
+						@include media-queries.large-desktop {
 							width: 38%;
 						}
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							width: 27%;
 							img {
 								display: none;
 							}
 						}
-						@include tablet {
+						@include media-queries.tablet {
 							display: none;
 						}
 					}
 					.subject{
 						padding: 0px 5px;
 						width: 35%;
-						@include large-desktop {
+						@include media-queries.large-desktop {
 							width: 40%;
 						}
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							width: 44%;
 						}
-						@include tablet {
+						@include media-queries.tablet {
 							width: 52%;
 						}
 					}
 					.venue{
 						padding: 0px 0px 0px 5px;
 						width: 8%;
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							width: 11%;
 						}
-						@include tablet {
+						@include media-queries.tablet {
 							width: 20%;
 						}
 					}
@@ -483,33 +488,33 @@
 			}
 			li.headings{
 				padding: 22px 40px;
-				background: $primary-color;
+				background: variables.$primary-color;
 				div{
-					color: $light;
+					color: variables.$light;
 					text-transform: uppercase;
-					font-family: $secondary-font;
+					font-family: variables.$secondary-font;
 				}
 			}
 			li.schedule-details{
 				border-bottom: 1px solid;
 				border-left: 1px solid;
 				border-right: 1px solid;
-				border-color: $border-color;
+				border-color: variables.$border-color;
 				.block{
 					padding: 10px 30px;
-					@include tablet {
+					@include media-queries.tablet {
 						padding: 10px 20px;
 					}
-					@include mobile {
+					@include media-queries.mobile {
 						padding: 10px 10px;
 					}
-					background: $light;
+					background: variables.$light;
 					width: 100%;
 					transition: .2s ease-in;
 					div{
 						vertical-align: middle;
-						color: $black;
-						font-family: $secondary-font;
+						color: variables.$black;
+						font-family: variables.$secondary-font;
 						i{
 							font-size: 1.1875em;
 							color: #c7c8c9;
@@ -520,14 +525,14 @@
 						span.time{
 							padding: 0px 0px;
 							margin-left: 5px;
-							@include large-desktop {
+							@include media-queries.large-desktop {
 								margin-left: 0;
 							}
 						}
 						span.name{
 							margin-left: 20px;
 							transition: .2s ease-in;
-							@include desktop-sm {
+							@include media-queries.desktop-sm {
 								margin-left: 0;
 							}
 						}
@@ -535,14 +540,14 @@
 					a{
 						div.speaker, div.subject{
 							&:hover{
-								color: $primary-color;
+								color: variables.$primary-color;
 							}
 						}
 					}
 					&:hover{
 						box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
 						transform: scale(1.01);
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							box-shadow: none;
 							transform: none;
 						}
@@ -564,38 +569,38 @@
 				li.nav-item{
 					margin-right: 0;
 					margin-bottom: 10px;
-					@include desktop-sm {
+					@include media-queries.desktop-sm {
 						margin-right: 10px;
 					}
-					@include tablet {
+					@include media-queries.tablet {
 						width: 100%;
 						margin-bottom: 10px;
 						margin-right: 0;
 					}
 					a{
-						font-family: $secondary-font;
+						font-family: variables.$secondary-font;
 						text-transform: uppercase;
 						font-size: 20px; //24px
-						color: $black;
+						color: variables.$black;
 						font-weight: 500;
 						display: block;
 						border-radius: 0;
-						border: 1px solid $border-color;
+						border: 1px solid variables.$border-color;
 						padding: 20px 30px;
 						span{
 							margin-top: 2px;
-							font-family: $primary-font;
+							font-family: variables.$primary-font;
 							display: block;
 							font-size: 14px;
-							color: $text-color;
+							color: variables.$text-color;
 							font-weight: 400;
 						}
 						&.active{
-							background: $primary-color;
-							color: $light;
+							background: variables.$primary-color;
+							color: variables.$light;
 							position: relative;
 							span{
-								color: $light;
+								color: variables.$light;
 							}
 							&:after{
 								content: '';
@@ -609,8 +614,8 @@
 								height: 0;
 								border-style: solid;
 								border-width: 10px 0 10px 10px;
-								border-color: transparent transparent transparent $primary-color;
-								@include desktop-sm {
+								border-color: transparent transparent transparent variables.$primary-color;
+								@include media-queries.desktop-sm {
 									content: none;
 								}
 							}
@@ -633,34 +638,34 @@
 						}
 						.time{
 							width: 20%;
-							@include tablet {
+							@include media-queries.tablet {
 								width: 37%;
 							}
-							@include mobile {
+							@include media-queries.mobile {
 								width: 48%;
 							}
 						}
 						.speaker{
 							width: 30%;
-							@include desktop-sm {
+							@include media-queries.desktop-sm {
 								width: 50%;
 							}
-							@include tablet {
+							@include media-queries.tablet {
 								width: 60%;
 							}
-							@include mobile {
+							@include media-queries.mobile {
 								width: 50%;
 							}
 						}
 						.subject{
 							width: 30%;
-							@include large-desktop {
+							@include media-queries.large-desktop {
 								display: none;
 							}
 						}
 						.venue{
 							width: 18.6%;
-							@include tablet {
+							@include media-queries.tablet {
 								display: none;
 							}
 						}
@@ -669,28 +674,28 @@
 				}
 				li.headings{
 					padding: 25px 0;
-					background: $primary-color;
+					background: variables.$primary-color;
 					div{
-						color: $light;
+						color: variables.$light;
 						text-transform: uppercase;
-						font-family: $secondary-font;
+						font-family: variables.$secondary-font;
 					}
 				}
 				li.schedule-details{
 					&:not(:last-child){
-						border-bottom: 1px solid $border-color;
+						border-bottom: 1px solid variables.$border-color;
 					}
 					.block{
 						text-align: center;
 						padding: 0;
-						background: $light;
+						background: variables.$light;
 						width: 100%;
 						transition: .2s ease-in;
 						div{
 							padding-top: 25px;
 							padding-bottom: 25px;
-							color: $black;
-							font-family: $secondary-font;
+							color: variables.$black;
+							font-family: variables.$secondary-font;
 							i{
 								font-size: 1.1875em;
 								color: #c7c8c9;
@@ -704,22 +709,22 @@
 							span.name{
 								margin-left: 0px;
 								transition: .2s ease-in;
-								@include mobile {
+								@include media-queries.mobile {
 									margin-left: 0;
 								}
 							}
 							&:not(:last-child){
-								border-right: 1px solid $border-color;
+								border-right: 1px solid variables.$border-color;
 							}
 						}
 						&:not(:last-child){
-							border-bottom: 1px solid $border-color;
+							border-bottom: 1px solid variables.$border-color;
 						}
 						&:hover{
 							box-shadow: none;
 							transform: scale(1);
 							span.name{
-								color: $primary-color;
+								color: variables.$primary-color;
 							}
 						}
 					}
@@ -751,13 +756,13 @@
 		        margin-right: 25px;
 		        margin-bottom: 33px;
 		        display:inline-block;
-		        @include mobile {
+		        @include media-queries.mobile {
 		        	margin-right: 10px;
 		        	margin-bottom: 20px;
 		        }
 		        .syotimer-cell__value {
 		        	min-width: 80px;
-		        	font-family: $secondary-font;
+		        	font-family: variables.$secondary-font;
 					font-size: 35px;
 					height: 100px;
 					width: 100px;
@@ -765,13 +770,13 @@
 					text-align: center;
 					position: relative;
 					font-weight: bold;
-					color: $light;
+					color: variables.$light;
 					border: 2px solid rgba(255,255,255, .35);
 					background-clip: content-box;
 					background: rgba(255,255,255, .26);
 					margin-bottom: 8px;
 					border-radius: 100%;
-			        @include mobile {
+			        @include media-queries.mobile {
 						font-size: 30px;
 						height: 80px;
 						width: 80px;
@@ -784,8 +789,8 @@
 					font-size: 1rem;
 					text-transform: lowercase;
 					font-weight:normal;
-					color: $light;
-					font-family: $secondary-font;
+					color: variables.$light;
+					font-family: variables.$secondary-font;
 		        }
 		      }
 		}
@@ -794,8 +799,8 @@
 		position: relative;
 		padding: 150px 10%;
 		height: 100%;
-		background: $primary-color;
-		@include mobile{
+		background: variables.$primary-color;
+		@include media-queries.mobile{
 			padding: 50px 20px;
 		}
 		[class*=col-]{
@@ -814,17 +819,17 @@
 			padding: 30px;
 			text-align: center;
 			i, h5{
-				color: $light;
+				color: variables.$light;
 			}
 			i{
 				font-size: 3.25rem;//52px
 				margin-bottom: 20px;
 			}
 			h5{
-				font-family: $primary-font;
+				font-family: variables.$primary-font;
 				font-weight: 400;
 				text-transform: uppercase;
-				@include mobile{
+				@include media-queries.mobile{
 					font-size: 1rem;
 				}
 			}
@@ -839,8 +844,8 @@
 			height: 0;
 			border-style: solid;
 			border-width: 0 0 1000px 300px;
-			border-color: transparent transparent $primary-color transparent;
-			@include large-desktop {
+			border-color: transparent transparent variables.$primary-color transparent;
+			@include media-queries.large-desktop {
 				content: none;
 			}
 		}
@@ -868,17 +873,17 @@
 			padding: 30px;
 			text-align: center;
 			i, h5{
-				color: $light;
+				color: variables.$light;
 			}
 			i{
 				font-size: 3.25rem;//52px
 				margin-bottom: 20px;
 			}
 			h5{
-				font-family: $primary-font;
+				font-family: variables.$primary-font;
 				font-weight: 400;
 				text-transform: uppercase;
-				@include mobile{
+				@include media-queries.mobile{
 					font-size: 12px;
 				}
 			}
@@ -893,12 +898,12 @@
 			z-index: 9;
 			.title{
 				h3{
-					color: $light;
+					color: variables.$light;
 					font-weight: 500;
 					margin-bottom: 10px;
 				}
 				p{
-					color: darken($light, 30%);
+					color: color.adjust(variables.$light, $lightness: -30%);
 					line-height: 1;
 				}
 				margin-bottom: 35px;
@@ -909,9 +914,9 @@
 
 .pricing{
 	.pricing-item{
-		border: 1px solid $border-color;
+		border: 1px solid variables.$border-color;
 		position: relative;
-		@include desktop-sm {
+		@include media-queries.desktop-sm {
 			margin-bottom: 30px;
 		}
 		&.sold-out {
@@ -930,27 +935,27 @@
 			pointer-events: none;
 			.sold-out-badge {
 				background: #dc3545;
-				color: $light;
+				color: variables.$light;
 				font-size: 2.5rem;
 				font-weight: bold;
 				padding: 20px 40px;
 				transform: rotate(-15deg);
 				box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-				border: 3px solid darken(#dc3545, 10%);
+				border: 3px solid color.adjust(#dc3545, $lightness: -10%);
 				text-transform: uppercase;
 				letter-spacing: 3px;
 			}
 		}
 		.pricing-heading{
 			padding: 20px 40px 30px 40px;
-			background: $light-gray;
-			border-bottom: 1px solid $border-color;
+			background: variables.$light-gray;
+			border-bottom: 1px solid variables.$border-color;
 			.title{
 				h6{
 					text-transform: uppercase;
 					font-weight: 400;
 					line-height: 50px;
-					border-bottom: 1px solid $border-color;
+					border-bottom: 1px solid variables.$border-color;
 				}
 			}
 			.price{
@@ -974,7 +979,7 @@
 						span{
 							margin-right: 15px;
 							&.available{
-								color: $primary-color;
+								color: variables.$primary-color;
 							}
 							&.unavailable{
 								color: #d2d2d2;
@@ -995,18 +1000,18 @@
 			border: none;
 			box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
 			.pricing-heading{
-				background: $primary-color;
-				border-bottom: 1px solid $primary-color;
+				background: variables.$primary-color;
+				border-bottom: 1px solid variables.$primary-color;
 				.title{
 					h6{
-						color: $light;
+						color: variables.$light;
 						border-bottom: 1px solid #f69351;
 					}
 				}
 				.price{
 					margin-top: 28px;
 					h2{
-						color: $light;
+						color: variables.$light;
 						font-size: 3.625rem;
 						span{
 							font-size: 1.5625rem;
@@ -1014,7 +1019,7 @@
 						margin-bottom: 0px;
 					}
 					p{
-						color: $light;
+						color: variables.$light;
 					}
 				}
 			}
@@ -1022,9 +1027,9 @@
 	}
 	&.two{
 		.pricing-item{
-			border: 1px solid $border-color;
+			border: 1px solid variables.$border-color;
 			overflow: hidden;
-			@include desktop-sm {
+			@include media-queries.desktop-sm {
 				margin-bottom: 30px;
 			}
 			.pricing-heading{
@@ -1047,8 +1052,8 @@
 					height: 0;
 					border-style: solid;
 					border-width: 64px 500px 0 0;
-					border-color: $light-gray transparent transparent transparent;
-					@include desktop-sm{
+					border-color: variables.$light-gray transparent transparent transparent;
+					@include media-queries.desktop-sm{
 						content: none;
 					}
 				}
@@ -1060,7 +1065,7 @@
 						p{
 							span{
 								&.available{
-									color: $primary-color;
+									color: variables.$primary-color;
 								}
 							}
 						}
@@ -1071,7 +1076,7 @@
 			&.featured{
 				.pricing-heading{
 					&:before{
-						border-color: $primary-color transparent transparent transparent;
+						border-color: variables.$primary-color transparent transparent transparent;
 					}
 				}
 			}
@@ -1084,27 +1089,27 @@
 	.sponsor-title{
 		margin-top: 10px;
 		h5{
-			color: $primary-color;
+			color: variables.$primary-color;
 		}
 		margin-bottom: 30px;
 	}
 	.block{
 		.list-inline-item:not(:last-child){
 			margin-right: 15px;
-			@include desktop-sm{
+			@include media-queries.desktop-sm{
 				margin-right: 7px;
 				margin-left: 7px;
 			}
 		}
 		.list-inline-item:last-child{
-			@include desktop-sm{
+			@include media-queries.desktop-sm{
 				margin-right: 7px;
 				margin-left: 7px;
 			}
 		}
 		.image-block{
 			padding: 45px 0;
-			background: $light;
+			background: variables.$light;
 			width: 244px;
 			cursor: pointer;
 			transition: all .3s ease;
@@ -1115,7 +1120,7 @@
 			margin-bottom: 10px;
 			&:hover{
 				@extend .shadow;
-				border: 1px solid $primary-color;
+				border: 1px solid variables.$primary-color;
 			}
 		}
 		margin-bottom: 40px;
@@ -1138,12 +1143,12 @@
 		padding: 45px 50px 50px 50px;
 		top: 80px;
 		left: 10%;
-		@include mobile {
+		@include media-queries.mobile {
 			display: none;
 		}
-		background: $primary-color;
+		background: variables.$primary-color;
 		h4,li{
-			color: $light;
+			color: variables.$light;
 			margin-bottom: 20px;
 		}
 		h4{
@@ -1174,10 +1179,10 @@
 		.address-block{
 			// right: 10%;
 			left: 60%;
-			@include desktop-sm{
+			@include media-queries.desktop-sm{
 				left: 52%;
 			}
-			@include tablet{
+			@include media-queries.tablet{
 				left: 5%;
 			}
 		}
@@ -1187,7 +1192,7 @@
 			top: 0;
 			left: 0;
 			overflow: hidden;
-			@include tablet {
+			@include media-queries.tablet {
 				width: 100%;
 				position: relative;
 			}
@@ -1197,11 +1202,11 @@
 					position: relative;
 					margin-bottom: 65px;
 					h3{
-						color: $light;
+						color: variables.$light;
 						font-weight: 400;
 					}
 					p{
-						color: $light;
+						color: variables.$light;
 					}
 				}
 				.form-control,button{
@@ -1216,17 +1221,17 @@
 	.feature-content{
 		h2, p{
 			margin-bottom: 25px;
-			@include tablet {
+			@include media-queries.tablet {
 				text-align: center;
 			}
 		}
 	}
 	.testimonial{
-		@include tablet {
+		@include media-queries.tablet {
 			text-align: center;
 		}
 		p{
-			font-family: $secondary-font;
+			font-family: variables.$secondary-font;
 			margin-bottom: 10px;
 			font-style: italic;
 			color: #242424;
@@ -1248,7 +1253,7 @@
 // App Features
 .app-features{
 	.app-feature{
-		@include mobile {
+		@include media-queries.mobile {
 			margin-bottom: 30px;
 		}
 	}
@@ -1266,12 +1271,12 @@
 		img{
 			height: 625px;
 		}
-		@include tablet {
+		@include media-queries.tablet {
 			margin-bottom: 30px;
 		}
 	}
 	.block{
-		@include tablet {
+		@include media-queries.tablet {
 			text-align: center;
 		}
 		.logo{
@@ -1298,7 +1303,7 @@
 		text-align: center;
 		h2{
 			font-size: 30px;
-			color: $light;
+			color: variables.$light;
 		}
 		p{
 			margin-bottom: 30px;
@@ -1307,10 +1312,10 @@
 			i.video{
 				height: 125px;
 			    width: 125px;
-			    background: $primary-color;
+			    background: variables.$primary-color;
 			    display: inline-block;
 			    font-size: 40px;
-			    color: $light;
+			    color: variables.$light;
 			    text-align: center;
 			    line-height: 125px;
 			    border-radius: 100%;
@@ -1337,7 +1342,7 @@
 					width: 100%;
 					display: flex;
 			        justify-content: center;
-					@include tablet {
+					@include media-queries.tablet {
 				        flex-grow: 1;
 					}
 					img{
@@ -1347,7 +1352,7 @@
 					}
 				}
 				p{
-					font-family: $secondary-font;
+					font-family: variables.$secondary-font;
 					font-style: italic;
 					color: #888888;
 				}
@@ -1363,12 +1368,12 @@
 			.owl-dot{
 				&:hover{
 					span{
-						background: $primary-color;
+						background: variables.$primary-color;
 					}
 				}
 				&.active{
 					span{
-						background: $primary-color;
+						background: variables.$primary-color;
 					}
 				}
 			}

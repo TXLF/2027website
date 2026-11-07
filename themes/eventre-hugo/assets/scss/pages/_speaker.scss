@@ -1,16 +1,19 @@
+@use "../media-queries";
+@use "../variables";
+
 .single-speaker{
 	.block{
 		padding-bottom: 70px;
-		border-bottom: 1px solid $border-color;
+		border-bottom: 1px solid variables.$border-color;
 		.image-block{
 			margin-top: 0px;
-			background: $light;
-			border: 1px solid $border-color;
+			background: variables.$light;
+			border: 1px solid variables.$border-color;
 			padding: 6px;
 			img{
 				width: 100%;
 			}
-			@include tablet {
+			@include media-queries.tablet {
 				margin-bottom: 30px;
 			}
 		}
@@ -22,7 +25,7 @@
 			}
 			.profession{
 				p{
-					color: $primary-color;
+					color: variables.$primary-color;
 				}
 			}
 			.details{
@@ -55,16 +58,16 @@
 							display: block;
 							height: 40px;
 							width: 40px;
-							background: $light;
-							border: 1px solid $border-color;
+							background: variables.$light;
+							border: 1px solid variables.$border-color;
 							text-align: center;
 							i{
 								line-height: 40px;
 							}
 							&:hover{
-								background: $primary-color;
-								border: 1px solid $primary-color;
-								color: $light;
+								background: variables.$primary-color;
+								border: 1px solid variables.$primary-color;
+								color: variables.$light;
 							}
 						}
 					}
@@ -89,7 +92,7 @@
 			}
 		}
 		.personal-info{
-			@include tablet {
+			@include media-queries.tablet {
 				margin-bottom: 30px;
 			}
 			ul{
@@ -105,7 +108,7 @@
 						left: -25px;
 					    content: "\f10c";
 					    font-family: FontAwesome;
-					    color: $primary-color;
+					    color: variables.$primary-color;
 					    
 					}
 				}
@@ -120,12 +123,12 @@
 					border-radius: 0;
 					overflow: visible;
 					.progress-bar{
-						background-color: $primary-color;
+						background-color: variables.$primary-color;
 						span{
-							font-family: $secondary-font;
+							font-family: variables.$secondary-font;
 							float: right;
 							margin-top: -20px;
-							color: $black;							
+							color: variables.$black;							
 						}
 					}
 				}
@@ -151,14 +154,14 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background: $primary-color;
+				background: variables.$primary-color;
 				opacity: .85;
 				transition: .3s ease;
 				h5, p, i{
-					color: $light;
+					color: variables.$light;
 				}
 				h5,p{
-					font-family: $secondary-font;
+					font-family: variables.$secondary-font;
 					font-weight: 400;
 				}
 				h5{
@@ -206,19 +209,19 @@
 			}
 		}
 		.slick-prev, .slick-next{
-			background: $light;
+			background: variables.$light;
 			width: 70px;
 			height: 70px;
 			border-radius: 100%;
 			z-index: 100;
 			&:hover{
 				&:before{
-					color: $primary-color;
+					color: variables.$primary-color;
 				}
 			}
 			&:before {
-				color: $primary-color;
-				font-family: $icon-font;
+				color: variables.$primary-color;
+				font-family: variables.$icon-font;
 			}		
 		}
 	}

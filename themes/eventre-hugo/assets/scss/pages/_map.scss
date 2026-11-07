@@ -1,7 +1,9 @@
+@use "../variables";
+
 .map{
 	.image-block{
-		background: $light;
-		border: 1px solid $border-color;
+		background: variables.$light;
+		border: 1px solid variables.$border-color;
 		padding: 10px 20px;
 		img{
 			width: 100%;

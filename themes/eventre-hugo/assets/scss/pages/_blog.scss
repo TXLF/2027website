@@ -1,10 +1,14 @@
+@use "../media-queries";
+@use "../variables";
+@use "../common";
+
 .news{
 	.blog-post{
 		transition: .2s ease;
 		margin-bottom: 30px;
 		.post-thumb{
 			img{
-				@include tablet {
+				@include media-queries.tablet {
 					width: 100%;
 				}
 			}
@@ -14,7 +18,7 @@
 			padding: 30px 30px 25px 30px;
 			border-width: 0 1px 1px 1px;
 			border-style: solid;
-			border-color: $border-color;
+			border-color: variables.$border-color;
 			.date{
 				position: absolute;
 				top: -32px;
@@ -22,12 +26,12 @@
 				width: 65px;
 				height: 65px;
 				text-align: center;
-				background: $primary-color;
+				background: variables.$primary-color;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				h4{
-					color: $light;
+					color: variables.$light;
 					span{
 						display: block;
 						font-size: 1rem;
@@ -40,14 +44,14 @@
 					margin-top: 10px;
 					a{
 						font-weight: 400;
-						color: $black;
+						color: variables.$black;
 						&:hover{
-							color: $primary-color;
+							color: variables.$primary-color;
 						}
 					}
 				}
 				padding-bottom: 5px;
-				border-bottom: 1px solid $border-color;
+				border-bottom: 1px solid variables.$border-color;
 				margin-bottom: 15px;
 			}
 			.post-meta{
@@ -81,7 +85,7 @@
 				margin-bottom: 10px;
 			}
 			.post-meta{
-				border-bottom: 1px solid $border-color;
+				border-bottom: 1px solid variables.$border-color;
 				margin-bottom: 10px;
 			}
 			.post-details{
@@ -92,7 +96,7 @@
 				.quotes{
 					background: #f5f5f8;
 					padding: 30px;
-					border-left:3px solid $primary-color;
+					border-left:3px solid variables.$primary-color;
 					blockquote{
 						font-size: 15px;
 						font-style: italic;
@@ -103,7 +107,7 @@
 					display: flex;
 					padding-top: 20px;
 					padding-bottom: 25px;
-					@include desktop-sm {
+					@include media-queries.desktop-sm {
 						flex-wrap: wrap;
 					}
 					p{
@@ -112,7 +116,7 @@
 					.tag{
 						flex-basis: 50%;
 						align-self: center;
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							flex-basis: 100%;
 							text-align: center;
 							margin-bottom: 30px;
@@ -120,18 +124,18 @@
 						}
 						p,ul{
 							display: inline;
-							font-family: $secondary-font;
+							font-family: variables.$secondary-font;
 						}
 						p{
-							color: $black;
+							color: variables.$black;
 						}
 						ul{
 							li{
 								a{
-									color: $text-color;
+									color: variables.$text-color;
 									font-size: 15px;
 									&:hover{
-										color: $primary-color;
+										color: variables.$primary-color;
 									}
 								}
 							}
@@ -140,30 +144,30 @@
 					.share{
 						flex-basis: 50%;
 						text-align: right;
-						@include desktop-sm {
+						@include media-queries.desktop-sm {
 							flex-basis: 100%;
 							flex-grow: 1;
 							text-align: center;
 						}
 						p,ul{
 							display: inline;
-							font-family: $secondary-font;
+							font-family: variables.$secondary-font;
 						}
 						p{
 							margin-right: 18px;
-							@include mobile-xs{
+							@include media-queries.mobile-xs{
 								display: block;
 								margin-bottom: 10px;
 							}
 						}
 						ul.social-links-share{
 							margin-bottom: 0;
-							@include mobile-xs{
+							@include media-queries.mobile-xs{
 								text-align: left;
 							}
 							.list-inline-item:not(:last-child) {
 								margin-right: 7px;
-								@include mobile-xs{
+								@include media-queries.mobile-xs{
 									margin-right: 5px;
 									margin-bottom: 5px;
 								}
@@ -174,16 +178,16 @@
 									height: 38px;
 									width: 38px;
 									text-align: center;
-									background: $light;
-									border: 1px solid $border-color;
+									background: variables.$light;
+									border: 1px solid variables.$border-color;
 									i{
 										line-height: 38px;
 									}
 									&:hover{
-										background: $primary-color;
-										border-color: $primary-color;
+										background: variables.$primary-color;
+										border-color: variables.$primary-color;
 										i{
-											color: $light;
+											color: variables.$light;
 										}
 									}
 								}
@@ -227,7 +231,7 @@
 							margin-right: 7px;
 						}
 						a{
-							color: $primary-color;
+							color: variables.$primary-color;
 						}
 					}
 					margin-bottom: 10px;
@@ -260,22 +264,22 @@ ul.pagination{
       line-height: 50px;
       text-align: center;
       border-color: transparent;
-      color: $text-color;
-      border: 1px solid $border-color;
+      color: variables.$text-color;
+      border: 1px solid variables.$border-color;
       border-radius: 0 !important;
       &:hover, &:focus{
-      	background-color: $primary-color !important;
-        color: $light !important; 
-        border-color: $primary-color !important;
+      	background-color: variables.$primary-color !important;
+        color: variables.$light !important; 
+        border-color: variables.$primary-color !important;
         @extend .shadow;
       }
     }
   }
   .active{
     a{
-        background-color: $primary-color !important;
-        color: $light !important; 
-        border-color: $primary-color !important;
+        background-color: variables.$primary-color !important;
+        color: variables.$light !important; 
+        border-color: variables.$primary-color !important;
         @extend .shadow;
     }
   }
@@ -290,7 +294,7 @@ ul.pagination{
 	}
 	margin-bottom: 45px;
 	&.search{
-		@include tablet {
+		@include media-queries.tablet {
 			margin-top: 30px;
 		}
 		.input-group{
@@ -298,8 +302,8 @@ ul.pagination{
 				border-right: none;
 			}
 			.input-group-addon{
-				background: $primary-color;
-				color: $light;
+				background: variables.$primary-color;
+				color: variables.$light;
 				border: none;
 				border-radius: 0;
 				i{
@@ -315,14 +319,14 @@ ul.pagination{
 			li{
 				margin-bottom: 10px;
 				padding-bottom: 10px;
-				border-bottom: 1px solid $border-color;
+				border-bottom: 1px solid variables.$border-color;
 				list-style: none;
 				a{
 					font-size: 15px;
 					letter-spacing: 0;
 					display: block;
 					&:hover{
-						color: $primary-color;
+						color: variables.$primary-color;
 					}
 				}
 				&:last-child{
@@ -337,13 +341,13 @@ ul.pagination{
 				a{
 					display: block;
 					padding: 10px 25px;
-					border: 1px solid $border-color;
+					border: 1px solid variables.$border-color;
 					margin-bottom: 15px;
 					font-size: 15px;
 					&:hover{
-						background: $primary-color;
-						color: $light;
-						border-color: $primary-color;
+						background: variables.$primary-color;
+						color: variables.$light;
+						border-color: variables.$primary-color;
 					}
 				}
 			}
@@ -353,7 +357,7 @@ ul.pagination{
 		.media{
 			padding: 15px 0;
 			&:not(:last-child){
-				border-bottom: 1px solid $border-color;
+				border-bottom: 1px solid variables.$border-color;
 			}
 			img{
 				margin-right: 15px;
@@ -362,11 +366,11 @@ ul.pagination{
 				h6{
 					a{
 						font-size: 15px;
-						color: $black;
+						color: variables.$black;
 						line-height: 1;
 						font-weight: 400;
 						&:hover{
-							color: $primary-color;
+							color: variables.$primary-color;
 						}
 					}
 				}
@@ -383,15 +387,15 @@ ul.pagination{
 .news-hr{
 	.news-post-hr{
 		display: flex;
-		@include large-desktop{
+		@include media-queries.large-desktop{
 			flex-direction: column;
 		}
-		@include desktop-sm{
+		@include media-queries.desktop-sm{
 			margin-bottom: 30px;
 		}
 		.post-thumb{
 			flex-basis: 50%;
-			@include large-desktop{
+			@include media-queries.large-desktop{
 				flex-basis: 100%;
 			}
 			img{
@@ -404,9 +408,9 @@ ul.pagination{
 			position: relative;
 			border-right: 1px solid;
 			border-bottom: 1px solid;
-			border-color: $border-color;
-			@include large-desktop{
-				border-left: 1px solid $border-color;
+			border-color: variables.$border-color;
+			@include media-queries.large-desktop{
+				border-left: 1px solid variables.$border-color;
 				flex-basis: 100%;
 			} 
 			.post-title{
@@ -418,14 +422,14 @@ ul.pagination{
 						font-weight: 400;
 						position: relative;
 						font-size: 20px;
-						color: $black;
+						color: variables.$black;
 						&:after{
 							position: absolute;
 							bottom: 0;
 							left: 0;
 							top: 37px;
 							content: "";
-							background: $primary-color;
+							background: variables.$primary-color;
 							width: 30px;
 							height: 2px;
 						}
@@ -442,12 +446,12 @@ ul.pagination{
 				width: 65px;
 				height: 65px;
 				text-align: center;
-				background: $primary-color;
+				background: variables.$primary-color;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				h4{
-					color: $light;
+					color: variables.$light;
 					font-weight: 400;
 					span{
 						display: block;
@@ -460,8 +464,8 @@ ul.pagination{
 				text-align: right;
 				margin-top: -25px;
 				a{
-					font-family: $secondary-font;
-					color: $black;
+					font-family: variables.$secondary-font;
+					color: variables.$black;
 					text-transform: uppercase;
 					font-size: 14px;
 					
@@ -478,8 +482,8 @@ ul.pagination{
 				height: 0;
 				border-style: solid;
 				border-width: 10px 10px 10px 0;
-				border-color: transparent $light transparent transparent;
-				@include large-desktop {
+				border-color: transparent variables.$light transparent transparent;
+				@include media-queries.large-desktop {
 					content: none;
 				}
 			}

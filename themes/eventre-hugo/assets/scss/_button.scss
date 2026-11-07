@@ -1,20 +1,23 @@
+@use "sass:color";
+@use "variables";
+
 .btn{
 	text-transform: uppercase;
-    font-family: $secondary-font;
+    font-family: variables.$secondary-font;
     transition: all .3s ease;
 }
 
 .btn-main{
     padding: 23px 45px;
     border-radius: 3px;
-	background: $primary-color;
-    color: $light;
+	background: variables.$primary-color;
+    color: variables.$light;
     outline: none;
     &:hover{
-    	color: $light;
+    	color: variables.$light;
     }
     &:focus{
-    	color: $light;
+    	color: variables.$light;
         box-shadow: none;
     }
 }
@@ -22,16 +25,16 @@
 .btn-main-md{
     padding: 13px 40px;
     border-radius: 0;
-    background: $primary-color;
-    color: $light;
+    background: variables.$primary-color;
+    color: variables.$light;
     outline: none;
     font-size: 0.9375rem;
     &:hover{
-        color: $light;
-        background: darken($primary-color, 5);
+        color: variables.$light;
+        background: color.adjust(variables.$primary-color, $lightness: -5%);
     }
     &:focus{
-        color: $light;
+        color: variables.$light;
         box-shadow: none;
     }
 }
@@ -41,46 +44,46 @@
     background: transparent;
     outline: none;
     font-size: 0.9375rem;
-    color: $black;
-    border: 1px solid $border-color;
+    color: variables.$black;
+    border: 1px solid variables.$border-color;
     border-radius: 0;
     &:hover{
-        background: $primary-color;
-        border-color: $primary-color;
-        color: $light;
+        background: variables.$primary-color;
+        border-color: variables.$primary-color;
+        color: variables.$light;
     }
 }
 
 .btn-main-sm{
     padding: 10px 35px;
     border-radius: 3px;
-    background: $primary-color;
-    color: $light;
+    background: variables.$primary-color;
+    color: variables.$light;
     outline: none;
     font-size: 14px;
     &:hover{
-        color: $light;
+        color: variables.$light;
     }
     &:focus{
-        color: $light;
+        color: variables.$light;
         box-shadow: none;
     }
 }
 
 .btn-white-md{
-	background: $light;
-	color: $black;
+	background: variables.$light;
+	color: variables.$black;
     padding: 13px 40px;
     border-radius: 0;
     &:hover{
-        background: $primary-color;
-        color: $light;
+        background: variables.$primary-color;
+        color: variables.$light;
     }
 }
 
 .btn-rounded-icon{
     border-radius: 100px;
-    color: $light;
-    border: 1px solid $light;
+    color: variables.$light;
+    border: 1px solid variables.$light;
     padding: 13px 50px;
 }

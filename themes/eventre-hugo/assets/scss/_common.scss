@@ -1,9 +1,13 @@
+@use "sass:color";
+@use "media-queries";
+@use "variables";
+
 .shadow {
   box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
 }
 
 .border-bottom {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid variables.$border-color;
 }
 
 
@@ -14,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $body-color;
+  background-color: variables.$body-color;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -60,7 +64,7 @@
 .text-overlay {
   &:after {
     content: 'CONFERENCE';
-    font-family: $secondary-font;
+    font-family: variables.$secondary-font;
     font-weight: 600;
     font-size: 215px;
     width: 100%;
@@ -72,11 +76,11 @@
     opacity: .05;
     transform: translateX(-50%);
 
-    @include tablet {
+    @include media-queries.tablet {
       font-size: 100px;
     }
 
-    @include mobile {
+    @include media-queries.mobile {
       font-size: 70px;
     }
   }
@@ -132,7 +136,7 @@
     bottom: 0;
     transform: skewX(-20deg);
 
-    @include tablet {
+    @include media-queries.tablet {
       content: none;
     }
   }
@@ -145,7 +149,7 @@ h4,
 h5,
 h6 {
   em {
-    color: $primary-color;
+    color: variables.$primary-color;
     font-style: italic;
     font-weight: 400;
   }
@@ -157,7 +161,7 @@ a {
 
 a:focus,
 a:hover {
-  color: $primary-color;
+  color: variables.$primary-color;
   text-decoration: none;
 }
 
@@ -172,7 +176,7 @@ button {
 }
 
 .bg-blue {
-  background: $primary-color;
+  background: variables.$primary-color;
 }
 
 .bg-banner-one {
@@ -186,7 +190,7 @@ button {
   background-size: cover;
   background-position: right center;
 
-  @include tablet {
+  @include media-queries.tablet {
     background-position: center center;
   }
 }
@@ -256,7 +260,7 @@ button {
 }
 
 .border-less {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid variables.$border-color;
 }
 
 .content {
@@ -288,7 +292,7 @@ button {
 
     h3,
     p {
-      color: $light;
+      color: variables.$light;
     }
   }
 }
@@ -355,9 +359,9 @@ button {
         height: 125px;
         width: 125px;
         font-size: 40px;
-        background: $primary-color;
+        background: variables.$primary-color;
         border-radius: 100%;
-        color: $light;
+        color: variables.$light;
         line-height: 125px;
         text-align: center;
       }
@@ -373,22 +377,22 @@ button {
 .form-control {
   &.main {
     background: transparent;
-    border: 1px solid darken($light, 30%);
+    border: 1px solid color.adjust(variables.$light, $lightness: -30%);
     border-radius: 0;
     font-size: 0.9375rem;
     padding: 15px 20px;
     margin-bottom: 20px;
     height: 50px;
-    color: darken($light, 30%);
+    color: color.adjust(variables.$light, $lightness: -30%);
 
     &:focus {
-      border: 1px solid $primary-color;
+      border: 1px solid variables.$primary-color;
     }
   }
 
   &.white {
-    background: $light;
-    color: $black;
+    background: variables.$light;
+    color: variables.$black;
   }
 }
 
@@ -404,7 +408,7 @@ select.form-control:not([size]):not([multiple]) {
   img {
     margin-left: -40px;
 
-    @include tablet {
+    @include media-queries.tablet {
       margin-left: 0;
       margin-bottom: 30px;
 
@@ -418,7 +422,7 @@ select.form-control:not([size]):not([multiple]) {
   img {
     margin-left: 40px;
 
-    @include tablet {
+    @include media-queries.tablet {
       margin-left: 0;
     }
   }
@@ -474,11 +478,11 @@ select.form-control:not([size]):not([multiple]) {
       padding: 0;
       margin-right: 10px;
       border: 0;
-      color: $text-color;
+      color: variables.$text-color;
 
       &:hover {
-        background: $primary-color;
-        color: $light;
+        background: variables.$primary-color;
+        color: variables.$light;
       }
 
       &:focus {
@@ -495,8 +499,8 @@ select.form-control:not([size]):not([multiple]) {
 
     &.active {
       .page-link {
-        background: $primary-color;
-        color: $light;
+        background: variables.$primary-color;
+        color: variables.$light;
       }
     }
   }

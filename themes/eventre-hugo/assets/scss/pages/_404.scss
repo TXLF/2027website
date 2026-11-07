@@ -1,3 +1,5 @@
+@use "../variables";
+
 .error{
     .block{
     	margin-top: 60px;
@@ -7,10 +9,10 @@
     	}
 		h3{
 			font-weight: 400;
-			color: $primary-color;
+			color: variables.$primary-color;
 			span{
 				font-style: italic;
-				color: $black;
+				color: variables.$black;
 			}
 			margin-bottom: 40px;
 		}

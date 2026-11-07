@@ -1,3 +1,5 @@
+@use "variables";
+
 ul.social-links{
 	margin-bottom: 0;
 	li{
@@ -11,7 +13,7 @@ ul.social-links{
 			display: block;
 			i{
 				font-size: 20px;
-				color: $black;
+				color: variables.$black;
 			}
 		}
 	}

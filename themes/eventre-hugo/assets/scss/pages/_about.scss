@@ -1,3 +1,6 @@
+@use "../variables";
+@use "../common";
+
 .about{
 	padding: 120px 0;
 }
@@ -6,7 +9,7 @@
 		margin-bottom: 30px;
 		.comment{
 			padding: 40px 30px;
-			border: 1px solid $border-color;
+			border: 1px solid variables.$border-color;
 			margin-bottom: 20px;
 			position: relative;
 			transition: .3s ease;
@@ -19,7 +22,7 @@
 				height: 0;
 				border-style: solid;
 				border-width: 0 30px 27px 0;
-				border-color: transparent $border-color transparent transparent;
+				border-color: transparent variables.$border-color transparent transparent;
 				transition: .3s ease;
 			}
 			&:after{
@@ -31,21 +34,21 @@
 				height: 0;
 				border-style: solid;
 				border-width: 0 28px 27px 0;
-				border-color: transparent $light transparent transparent;
+				border-color: transparent variables.$light transparent transparent;
 				transition: .3s ease;
 			}
 			&:hover{
-				background: $primary-color;
-				border: 1px solid $primary-color;
+				background: variables.$primary-color;
+				border: 1px solid variables.$primary-color;
 				@extend .shadow;
 				p{
-					color: $light;
+					color: variables.$light;
 				}
 				&:before{
-					border-color: transparent $primary-color transparent transparent;
+					border-color: transparent variables.$primary-color transparent transparent;
 				}
 				&:after{
-					border-color: transparent $primary-color transparent transparent;
+					border-color: transparent variables.$primary-color transparent transparent;
 				}
 			}
 		}
@@ -61,14 +64,14 @@
 				align-self: center;
 				.name{
 					p{
-						font-family: $secondary-font;
-						color: $black;
+						font-family: variables.$secondary-font;
+						color: variables.$black;
 					}
 				}
 				.profession{
 					p{
 						font-size: 0.8126rem; //13px
-						color: $primary-color;
+						color: variables.$primary-color;
 					}
 				}
 			}

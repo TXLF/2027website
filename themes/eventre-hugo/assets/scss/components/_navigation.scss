@@ -1,48 +1,51 @@
+@use "../media-queries";
+@use "../variables";
+
 .main-nav{
-	background: $light;
-	@include tablet{
+	background: variables.$light;
+	@include media-queries.tablet{
 		position: relative;
 	}
 	.navbar-brand{
 		padding: 35px 40px 35px 50px;
-		border-right: 1px solid $border-color;
-		@include large-desktop {
+		border-right: 1px solid variables.$border-color;
+		@include media-queries.large-desktop {
 			padding: 20px 30px;
 		}
-		@include tablet {
+		@include media-queries.tablet {
 			border-right: none;
 		}
 	}
 	.navbar-nav{
 		.nav-item{
 			position: relative;
-			font-family: $primary-font;
+			font-family: variables.$primary-font;
 			.nav-link{
 				position: relative;
 				text-align: center;
-				color: $black;
+				color: variables.$black;
 				padding-left: 8px;
 				padding-right: 20px;
 				font-size: 1.06rem;
-				font-family: $secondary-font;
-				@include desktop-nav {
+				font-family: variables.$secondary-font;
+				@include media-queries.desktop-nav {
 					font-size: 0.75rem;
 					padding-left: 5px;
 					padding-right: 10px;
 				}
-				@include large-desktop{
+				@include media-queries.large-desktop{
 				}
 				span{
-					color: $black;
+					color: variables.$black;
 					margin-left: 20px;
-					@include desktop {
+					@include media-queries.desktop {
 						margin-left: 10px;
 					}
 				}
 			}
 			&.active{
 				.nav-link{
-					color: $primary-color;
+					color: variables.$primary-color;
 				}
 			}
 		}
@@ -59,7 +62,7 @@
 	    }
 	  }
 	  &:hover .dropdown-menu {
-	  	border-top: 3px solid $primary-color;
+	  	border-top: 3px solid variables.$primary-color;
 	    display:none;
 	    opacity: 1;
 	    display: block;
@@ -76,11 +79,11 @@
   		    padding: 10px 0;
   		    transition: .3s ease;
   		    &:not(:last-child){
-  		    	border-bottom: 1px solid $border-color;
+  		    	border-bottom: 1px solid variables.$border-color;
   		    }
   		    &:hover{
-  		    	background: $light;
-  		    	color: $primary-color;
+  		    	background: variables.$light;
+  		    	color: variables.$primary-color;
   		    }
 	  	}
 	  	margin-top: 0;
@@ -98,7 +101,7 @@
 	    opacity: 0;
 	    transform: translateY(30px);
 			transition: visibility 0.2s, opacity 0.2s, transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
-			@include desktop-sm {
+			@include media-queries.desktop-sm {
 				transform: none;
 		    left: auto;
 		    position: relative;
@@ -109,29 +112,29 @@
 	  }
 	}
 	.ticket{
-		background: $primary-color;
+		background: variables.$primary-color;
 		display: block;
 		padding: 34px 32px;
-		@include large-desktop {
+		@include media-queries.large-desktop {
 			padding: 23px 14px;
 		}
-		@include desktop-sm{
+		@include media-queries.desktop-sm{
 			text-align: center;
 		}
 		img{
 			margin-right: 25px;
-			@include large-desktop {
+			@include media-queries.large-desktop {
 				display: none;
 			}
 		}
 		span{
-			color: $light;
+			color: variables.$light;
 			font-size: 1.125rem;
 			text-transform: uppercase;
-			font-family: $secondary-font;
+			font-family: variables.$secondary-font;
 			border-left: 1px solid #ffa366;
 			padding-left: 24px;
-			@include large-desktop {
+			@include media-queries.large-desktop {
 				padding-left: 0;
 				font-size: 1rem;
 				border-left: none;

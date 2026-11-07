@@ -1,16 +1,19 @@
+@use "../media-queries";
+@use "../variables";
+
 .single-talk{
 	.block{
 		padding-bottom: 70px;
-		border-bottom: 1px solid $border-color;
+		border-bottom: 1px solid variables.$border-color;
 		.image-block{
 			margin-top: 0px;
-			background: $light;
-			border: 1px solid $border-color;
+			background: variables.$light;
+			border: 1px solid variables.$border-color;
 			padding: 6px;
 			img{
 				width: 100%;
 			}
-			@include tablet {
+			@include media-queries.tablet {
 				margin-bottom: 30px;
 			}
 		}
@@ -23,7 +26,7 @@
 			.sponsor{
 				margin-top: 10px;
 				p{
-					color: $primary-color;
+					color: variables.$primary-color;
 				}
 			}
 			.details{

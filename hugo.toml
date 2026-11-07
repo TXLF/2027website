@@ -57,9 +57,12 @@ home = ["HTML"]
 ############################# Imaging ##############################
 [imaging]
 # See https://github.com/disintegration/imaging
-# Default JPEG or WebP quality setting. Default is 75.
-quality = 90
 resampleFilter = "lanczos"
+# JPEG and WebP quality settings. Default is 75.
+[imaging.jpeg]
+quality = 90
+[imaging.webp]
+quality = 90
 
 ############################# Caches ###############################
 [caches]
